@@ -1,0 +1,109 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Giữ cố định chiều cao bằng 100% màn hình */
+    background: url('https://i.pinimg.com/originals/a1/42/92/a142925abce159a52319e63fdca51f6e.gif') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Ẩn luôn thanh cuộn */
+}
+
+img {
+    width: 600px;
+    height: 700px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.controls {
+    margin-top: 20px;
+}
+.btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+}
+.btn img {
+    width: 40px;
+    height: 40px;
+}
+input[type='range'] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100px;
+    height: 10px;
+    background: navy;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Thay đổi icon của nút kéo trên Chrome & Safari */
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 40px;
+    height: 40px;
+    background: url('https://media1.giphy.com/media/UTLJsT3ywWczpq70uH/giphy.gif?cid=6c09b95250055721e5z6yzy857ad7iqrwtib2kx6tjvre1ar&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=s') no-repeat center;
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+}
+
+/* Thay đổi icon của nút kéo trên Firefox */
+input[type='range']::-moz-range-thumb {
+    width: 40px;
+    height: 40px;
+    background: url('https://media1.giphy.com/media/UTLJsT3ywWczpq70uH/giphy.gif?cid=6c09b95250055721e5z6yzy857ad7iqrwtib2kx6tjvre1ar&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=s') no-repeat center;
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+}
+.song-title {
+    font-size: 65px;
+    font-weight: bold;
+    margin: 10px;
+    text-align: center;
+    color: navy;
+}
+.corner-gif {
+    position: fixed;
+    width: 100px; /* Điều chỉnh kích thước nếu cần */
+    height: 100px;
+    pointer-events: none; /* Để không ảnh hưởng đến thao tác trên web */
+}
+
+.corner-top-left {
+    top: 0;
+    left: 0;
+}
+
+.corner-top-right {
+    top: 0;
+    right: 0;
+}
+
+.corner-bottom-left {
+    bottom: 0;
+    left: 0;
+}
+
+.corner-bottom-right {
+    bottom: 0;
+    right: 0;
+}
+
+
+.corner-left {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.corner-right {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
