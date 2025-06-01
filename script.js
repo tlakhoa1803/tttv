@@ -4,7 +4,7 @@ const songs = [
     { image: 'image/3.jpg', song: 'music/4.mp3', title: 'Thảo Vy', startTime: 1 },
     { image: 'image/4.jpg', song: 'music/3.mp3', title: '01/06' },
     { image: 'image/5.jpg', song: 'music/2.mp3', title: 'Vui vẻ 🙆'},
-    { image: 'image/5.jpg', song: 'music/1.mp3', title: 'I’ll always find a way to support you 🦝', startTime: 1 },
+    { image: 'image/6.jpg', song: 'music/1.mp3', title: 'I’ll always find a way to support you 🦝', startTime: 1 },
 
 ];
 
